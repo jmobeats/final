@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klondike Solitaire</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <p><a href="../Scatch Website/scratch.html">← Back to Home</a></p> 
+</head>
+<body>
+  <div id="hud">
+    <span id="timer">⏱️ Time: 0s</span>
+    <span id="leaderboard-button" style="cursor:pointer;">🏆 Show Leaderboard</span>
+  </div>
+
+  <div id="leaderboard" style="display: none;">
+    <h3>🏆 Top 5 Fastest Times</h3>
+    <ol id="leaderboard-list"></ol>
+
+  </div>
+
+  <h1>Klondike Solitaire</h1>
+  <button id="restart-button">Restart Game</button>
+
+  <div id="game-board">
+    <div id="top-row" class="board-section">
+      <div id="stock" class="stock" onclick="drawFromStock()"></div>
+      <div id="waste" class="waste"></div>
+      <div id="foundations" style="display: flex; gap: 10px;">
+        <div class="foundation" id="foundation-0"></div>
+        <div class="foundation" id="foundation-1"></div>
+        <div class="foundation" id="foundation-2"></div>
+        <div class="foundation" id="foundation-3"></div>
+      </div>
+    </div>
+    <div id="tableau" class="board-section"></div>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+  <script src="js/script.js"></script>
+ 
+</body>
+
+</html>
+
+
+

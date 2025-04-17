@@ -1,0 +1,120 @@
+/* styles.css - Solitaire Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #f4f4f8;
+  color: #222831;
+  line-height: 1.6;
+}
+
+.header {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  padding: 60px 40px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  border-bottom: 5px solid #f6c90e;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+.navigation {
+  text-align: center;
+  background-color: #1c1c1e;
+  padding: 15px;
+  font-size: 1.1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  border-bottom: 3px solid #f6c90e;
+}
+
+.navigation a {
+  color: #f6c90e;
+  margin: 0 20px;
+  padding: 6px 12px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #fff;
+  background-color: #f6c90e;
+  border-color: #f6c90e;
+}
+
+.content, .gear-section, .video-section, .tableau-section {
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1000px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.content:hover, .gear-section:hover, .video-section:hover, .tableau-section:hover {
+  transform: scale(1.01);
+  border-color: #f6c90e;
+}
+
+.tableau-section iframe,
+.tableau-section object {
+  width: 100% !important;
+  height: 600px !important;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: #2c5364;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 2px solid #f6c90e;
+  padding-bottom: 5px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 3px solid #f6c90e;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1c1c1e;
+  color: #ffffff;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.4);
+  border-top: 3px solid #f6c90e;
+}
+
+.footer a {
+  color: #f6c90e;
+  text-decoration: none;
+  padding: 4px 10px;
+  border: 1px solid #f6c90e;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.footer a:hover {
+  background-color: #f6c90e;
+  color: #1c1c1e;
+}
